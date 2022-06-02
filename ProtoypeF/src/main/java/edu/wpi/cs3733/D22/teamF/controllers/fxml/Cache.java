@@ -60,7 +60,8 @@ public class Cache {
 
     for (String path : fxmlPaths) {
       path = path.substring(25); // Strip "edu/wpi/cs3733/D22/teamF/"
-      if (exceptions.contains(path)) continue; // Skip pages that can't be cached
+      if (exceptions.contains(path) || path.contains("Map"))
+        continue; // Skip pages that can't be cached
 
       try {
         SceneManager.getInstance().loadViews(path);
