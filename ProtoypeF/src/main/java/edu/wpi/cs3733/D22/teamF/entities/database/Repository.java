@@ -23,9 +23,6 @@ public class Repository {
       case "Gift":
         db = DatabaseManager.getInstance().getGiftDAO();
         break;
-      case "Floral":
-        db = DatabaseManager.getInstance().getFloralDAO();
-        break;
       case "Medicine":
         db = DatabaseManager.getInstance().getMedicineDAO();
         break;

@@ -63,11 +63,6 @@
                                  <children>
                                     <VBox fx:id="v1" prefHeight="200.0" prefWidth="200.0">
                                        <children>
-                                          <JFXButton fx:id="mapViewButton" alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" minHeight="-Infinity" onAction="#changeToMap" prefHeight="45.0" prefWidth="286.0" text="Map" textFill="WHITE">
-                                             <font>
-                                                <Font name="Serif Regular" size="24.0" />
-                                             </font>
-                                          </JFXButton>
                                           <JFXButton fx:id="dashboardButton" alignment="TOP_LEFT" buttonType="RAISED" graphicTextGap="15.0" minHeight="-Infinity" onAction="#changeToDashboard" prefHeight="45.0" prefWidth="286.0" text="Dashboard" textFill="WHITE">
                                              <font>
                                                 <Font name="Serif Regular" size="24.0" />

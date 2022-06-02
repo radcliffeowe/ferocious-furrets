@@ -9,7 +9,6 @@ import edu.wpi.cs3733.D22.teamF.controllers.fxml.SceneManager;
 import edu.wpi.cs3733.D22.teamF.controllers.fxml.UserType;
 import edu.wpi.cs3733.D22.teamF.controllers.general.AudioPlayer;
 import edu.wpi.cs3733.D22.teamF.entities.database.ConnType;
-import io.github.palexdev.materialfx.controls.MFXCheckbox;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -42,7 +41,6 @@ public class LogInController extends ReturnHomePage implements Initializable {
   @FXML private JFXComboBox databaseChooser;
   @FXML private ImageView backgroundImage;
   @FXML private AnchorPane imageAnchor;
-  @FXML private MFXCheckbox volumeChecker;
 
   private Parent root;
   private Scene scene;
@@ -61,8 +59,6 @@ public class LogInController extends ReturnHomePage implements Initializable {
     backgroundImage.setManaged(false);
     backgroundImage.fitWidthProperty().bind(imageAnchor.widthProperty());
     backgroundImage.fitHeightProperty().bind(imageAnchor.heightProperty());
-
-    volumeChecker.setSelected(true);
   }
 
   /*
@@ -127,7 +123,7 @@ public class LogInController extends ReturnHomePage implements Initializable {
     if (success) {
       usernameField.clear();
       passwordField.clear();
-      AudioPlayer.getInstance().setIsPlay(volumeChecker.isSelected());
+      AudioPlayer.getInstance().setIsPlay(false);
       final BooleanProperty embedded =
           new SimpleBooleanProperty(databaseChooser.getValue().toString().equals("Embedded"));
 

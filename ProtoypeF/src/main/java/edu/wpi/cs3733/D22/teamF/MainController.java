@@ -46,7 +46,6 @@ public class MainController implements Initializable {
   @FXML JFXButton linksButton;
   @FXML JFXButton settingsButton;
   @FXML JFXButton outButton;
-  @FXML JFXButton mapViewButton;
   @FXML JFXButton dashboardButton;
   @FXML JFXButton callSecurity;
 
@@ -193,8 +192,6 @@ public class MainController implements Initializable {
     settingsButton.setText("");
     outButton.setGraphic(MapIconModifier.getIcon("outMenu"));
     outButton.setText("");
-    mapViewButton.setGraphic(MapIconModifier.getIcon("mapMenu"));
-    mapViewButton.setText("");
     dashboardButton.setGraphic(MapIconModifier.getIcon("dashboardMenu"));
     dashboardButton.setText("");
     labButton.setGraphic(MapIconModifier.getIcon("labMenu"));
@@ -243,7 +240,6 @@ public class MainController implements Initializable {
     serviceButton.setText("Service");
     settingsButton.setText("Settings");
     outButton.setText("Exit");
-    mapViewButton.setText("Map View");
     dashboardButton.setText("Dashboard");
     labButton.setText("Lab");
     scanButton.setText("Scan");
